@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  border: none;
+  background: none;
+  /* margin-left: 45px; */
+}
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(2, 0, 0);
+  background-color: transparent;
+  margin-left: 0px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  font-family: 'Manrope', sans-serif;
+}
+
+::placeholder {
+  color: rgb(10, 0, 0);
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
+}
+
+.card {
+  width: 320px;
+  /* height: 254px; */
+  border-radius: 30px;
+  background: rgb(33, 33, 33, 0.7);
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Manrope', sans-serif;
+
+}
+.recipeCards {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  text-shadow:1px 1px 1px rgb(245, 248, 241);
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tasty {
+  width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  margin-left: 10px;
 }
+
+.list {
+  list-style: none;
+  
+}
+
